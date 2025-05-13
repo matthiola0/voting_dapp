@@ -2,6 +2,10 @@
 
 This is a simplified blockchain-based voting DApp built using Solidity and Hardhat, and deployed on the Sepolia Ethereum testnet. The frontend allows users to vote for a candidate using MetaMask, and view real-time results.
 
+**🌐 Live Demo:** [https://matthiola0.github.io/voting\_dapp/](https://matthiola0.github.io/voting_dapp/)
+
+---
+
 ## 🔩 Features
 
 * Users can vote for a candidate (by ID).
@@ -32,7 +36,7 @@ voting-dapp/
 │   └── deploy.js
 ├── test/
 │   └── votingTest.js
-├── frontend/
+├── docs/
 │   ├── index.html
 │   └── app.js
 ├── hardhat.config.js
@@ -41,7 +45,7 @@ voting-dapp/
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### 1. Clone and install
 
@@ -71,7 +75,7 @@ Copy a private key from `npx hardhat node` and import it in MetaMask. Set networ
 ### 5. Run frontend
 
 ```bash
-cd frontend
+cd docs
 npx serve .
 ```
 
@@ -79,7 +83,7 @@ Open the provided URL (e.g., [http://localhost:3000](http://localhost:3000))
 
 ---
 
-## 🌐 How to Deploy to Sepolia
+## How to Deploy to Sepolia
 
 1. Set up `.env` or hardcode your RPC and private key in `hardhat.config.js`
 2. Request test ETH from [https://sepoliafaucet.com/](https://sepoliafaucet.com/)
@@ -89,13 +93,13 @@ Open the provided URL (e.g., [http://localhost:3000](http://localhost:3000))
 npx hardhat run scripts/deploy.js --network sepolia
 ```
 
-4. Copy deployed contract address into `frontend/app.js`'s `CONTRACT_ADDRESS`.
+4. Copy deployed contract address into `docs/app.js`'s `CONTRACT_ADDRESS`.
 
 5. Switch MetaMask to Sepolia and reload frontend.
 
 ---
 
-## ✅ Test Cases
+## Test Cases
 
 Run the unit tests:
 
@@ -112,17 +116,8 @@ Covers:
 
 ---
 
-## 🔗 Smart Contract Info
+## Smart Contract Info
 
 * Contract: `Voting.sol`
 * Network: Sepolia
 * Deployed Address: `0x8079FBDAC68bC7B9Ad56f72Fd035D7f8D0426840`
-
----
-
-## 👤 Author
-
-Po-Yu Pan
-CS5363 Blockchain Technologies and Applications
-National Tsing Hua University
-Email: [abc35100762@gmail.com](mailto:abc35100762@gmail.com)
